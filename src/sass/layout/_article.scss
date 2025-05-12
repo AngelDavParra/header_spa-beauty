@@ -16,18 +16,26 @@
         margin-bottom: 20px;
 
         &_items {
-            text-align: center;
             width: 100px;
+            display: grid;
+            justify-items: center;
+            gap: 10px;
+
+            &-title {
+                font-size: 25px;
+                font-weight: 500;
+            }
 
             &-description {
                 color: ab.$grey;
-                font-size: 14px;
+                font-size: 12px;
                 text-align: center;
             }
             &-img {
                 background-color: ab.$cyan;
                 border-radius: 50%;
-                width: 50px;
+                width: 40px;
+                padding: 8px;
             }
         }
 

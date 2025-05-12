@@ -26,6 +26,10 @@
                         border-bottom: 2px solid;
                     }
                 }
+                & .img_des {
+                    display: flex;
+                    gap: 15px;
+                }
             }
         }
     }
