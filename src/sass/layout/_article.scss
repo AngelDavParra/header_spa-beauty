@@ -7,7 +7,7 @@
     
     & .article{
         display: inline-flex;
-        gap: 80px;
+        gap: 50px;
         margin-top: -100px;
         background-color: white;
         padding: 40px;
@@ -31,6 +31,31 @@
             }
         }
 
+
+    }
+
+    & .article_info {
+        position: absolute;
+        display: grid;
+        gap: 5px;
+        right: 130px;
+        top:-30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+        width: 240px;
+        height: 130px;
+        font-size: 12px;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 5;
+
+        &_img {
+            width: 20px;
+        }
+        &_name {
+            color: ab.$blue;
+            font-weight: bold;
+        }
 
     }
     

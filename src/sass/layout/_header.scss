@@ -16,12 +16,15 @@
             display: flex;
             gap: 30px;
 
-            a {
-                text-decoration: none;
-                color: ab.$blue;
-                font-size: 14px;
-                &:hover{
-                    color:red;
+            li { 
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: ab.$blue;
+                    font-size: 14px;
+                    &:hover {
+                        border-bottom: 2px solid;
+                    }
                 }
             }
         }

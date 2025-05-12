@@ -6,14 +6,18 @@
  margin-right: auto;
  background-color: ab.$bg-gray;
  position: relative;
- 
- background-image:  url(/src/img/fondo.png) ;
- background-repeat:  no-repeat;
+
+
+ background-image: url(/src/img/fondo.png) ;
+ background-repeat: no-repeat;
  background-size:  400px;
- background-position: top right  ;
+ background-position: top right;
+ 
  
  &::before {
      content: "";
+     // Esto hace que el pseudo-elemento ::before no bloquee los clics y los eventos se "pasen" al contenido debajo, como los enlaces.
+     pointer-events: none;
      position: absolute;
      top: 0;
      left: 0;
@@ -21,15 +25,19 @@
      bottom: 0;
      background-image: url(/src/img/beauty-woman.png) ;
      background-repeat: no-repeat,;
-     background-size: 420px,;
+     background-size: 480px,;
      background-position: bottom right 210px;
-     z-index: 10;
+     z-index: 3;
     }
-    
     & .containt{
         padding: 0 50px;
         margin-bottom: 150px;
-   }
+        position: relative;
+    }
+
+    & .containt_2 {
+      position: relative;
+    }
  }
 
 

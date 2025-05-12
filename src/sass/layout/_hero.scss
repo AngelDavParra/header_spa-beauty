@@ -8,7 +8,6 @@
         font-size: 40px;
         line-height: 1.2;
         color: ab.$blue;
-        font-family: Poppins;
         font-weight: 900;
         margin-bottom: 15px;
     }
@@ -52,7 +51,26 @@
         }
     }
 
+    &_info {
+        position: absolute;
+        display: grid;
+        gap: 5px;
+        right: 20px;
+        bottom: -80px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+        width: 240px;
+        height: 130px;
+        font-size: 12px;
+        padding: 20px;
+        border-radius: 10px;
 
-
-
+        &_img {
+            width: 20px;
+        }
+        &_name {
+            color: ab.$blue;
+            font-weight: bold;
+        }
+    }
 }
