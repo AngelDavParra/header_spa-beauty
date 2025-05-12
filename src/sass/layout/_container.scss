@@ -1,0 +1,36 @@
+@use "../abstracts/abstracts" as ab;
+
+.container {
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: ab.$bg-gray;
+ position: relative;
+ 
+ background-image:  url(/src/img/fondo.png) ;
+ background-repeat:  no-repeat;
+ background-size:  400px;
+ background-position: top right  ;
+ 
+ &::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-image: url(/src/img/beauty-woman.png) ;
+     background-repeat: no-repeat,;
+     background-size: 420px,;
+     background-position: bottom right 210px;
+     z-index: 10;
+    }
+    
+    & .containt{
+        padding: 0 50px;
+        margin-bottom: 150px;
+   }
+ }
+
+
+

@@ -1,0 +1,51 @@
+@use "../abstracts/abstracts" as ab;
+
+.header {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 30px 0;
+    margin-bottom: 50px;
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        & ul {
+            display: flex;
+            gap: 30px;
+
+            a {
+                text-decoration: none;
+                color: ab.$blue;
+                font-size: 14px;
+                &:hover{
+                    color:red;
+                }
+            }
+        }
+    }
+
+    &_aside {
+        & ul {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            a {
+             color: ab.$blue;
+             font-size: 14px;
+            }
+            
+            & .btn {
+                @include ab.boton();
+                box-shadow: 1px 2px 6px ab.$blue;
+            }
+        
+
+            & .icon {
+                width: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@use "../abstracts/abstracts" as ab;
+
+
+
+.hero {
+    max-width: 500px;
+    &_title {
+        font-size: 40px;
+        line-height: 1.2;
+        color: ab.$blue;
+        font-family: Poppins;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+
+    &_description {
+        color: ab.$grey;
+        margin-bottom: 30px;
+
+    }
+
+    &_button {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & .btn{
+            @include ab.boton();
+            font-size: 14px;
+            box-shadow: 1px 2px 6px ab.$blue;
+        }
+        & .link {
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: ab.$blue;
+    
+            & span {
+                border-radius: 50%;
+                display: flex;
+                text-align: center;
+                background-color: white;
+                padding: 10px;
+                box-shadow: 1px 2px 6px grey;
+    
+                & img {
+                    width:20px;
+                }
+            }
+        }
+    }
+
+
+
+
+}

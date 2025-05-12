@@ -1,0 +1,37 @@
+@use "../abstracts/abstracts" as ab;
+
+
+.containt_2 {
+    background-color: white;
+    padding: 0px 50px;
+    
+    & .article{
+        display: inline-flex;
+        gap: 80px;
+        margin-top: -100px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: -0px 0px 5px 10px  5px grey;
+        margin-bottom: 20px;
+
+        &_items {
+            text-align: center;
+            width: 100px;
+
+            &-description {
+                color: ab.$grey;
+                font-size: 14px;
+                text-align: center;
+            }
+            &-img {
+                background-color: ab.$cyan;
+                border-radius: 50%;
+                width: 50px;
+            }
+        }
+
+
+    }
+    
+}

@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as var;
+
+@mixin boton(){
+  display: inline-block;
+  background-color: var.$blue;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+
